@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="USPApp">
+
+<head>
+
+    <title>Unlimited Shots Photobooth</title>
+
+    
+    <!--include JQuery -->
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+    <!--BOOTSTRAP includes-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <!--FONTS AWESOME includes-->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" />
+
+    <!--CSS includes-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <!-- Angular includes -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
+    <script src="app.js" type="text/javascript"></script>
+    
+
+    
+    
+</head>
+
+<!-- define angular controller -->
+<body ng-controller="mainController">
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#/">Unlimited Shots Photobooth</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about"><i class="fa fa-hashtag"></i> Who I am</a></li>
+                <li><a href="#services"><i class="fa fa-camera"></i> Services</a></li>
+                <li><a><i class="fa fa-camera-retro"></i> Your Photos</a></li>
+                <li><a href="#contact"><i class="fa fa-comment"></i> Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Angular injection-->
+    <div id="controller">
+        <div ng-view></div>
+    </div>
+
+
+    
+</body>
+
+</html>

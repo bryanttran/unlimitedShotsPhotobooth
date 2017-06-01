@@ -1,0 +1,25 @@
+
+
+/*--parallax--*/
+
+.parallax{
+    background: url("background.jpeg") fixed;
+    background-size: cover;
+    background-position: 50% 0;
+}
+
+.parallax-inner{
+    padding: 5% 0;   
+}
+
+.parallax-inner h1, h2{
+    color: yellow;
+}
+
+/*bootstrap customizations*/
+
+@media (max-width: 768px) {
+    .col-xs-12 {
+        text-align: center;
+    }
+}
