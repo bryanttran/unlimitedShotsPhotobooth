@@ -1,17 +1,13 @@
-(function(){
 
-  var parallax = document.querySelectorAll(".parallax"),
-      speed = 0.5;
+/*$('.parallax-home-2').parallax({imageSrc: 'pictures/snip1.png'});
+$('.parallax-home-1').parallax({imageSrc: 'pictures/background.jpeg'});*/
 
-  window.onscroll = function(){
-    [].slice.call(parallax).forEach(function(el,i){
 
-      var windowYOffset = window.pageYOffset,
-          elBackgrounPos = "50% " + (-(windowYOffset * speed)) + "px";
 
-      el.style.backgroundPosition = elBackgrounPos;
+$('[data-parallax="scroll"]').each(function() {
+    var $this = $(this);
+    $this.parallax({imageSrc: $this.data('image-src') });
+}); 
 
-    });
-  };
+//$('.parallax-home-2').parallax(); may need later
 
-})();

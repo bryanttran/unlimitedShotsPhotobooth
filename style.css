@@ -2,8 +2,8 @@
 
 /*--parallax--*/
 
-.parallax{
-    background: url("background.jpeg") fixed;
+.parallax-home-1{
+    background: url("pictures/background.jpeg") fixed;
     background-size: cover;
     background-position: 50% 0;
 }
@@ -12,9 +12,22 @@
     padding: 5% 0;   
 }
 
+#parallax-home-2{
+    padding: 5%;
+    width: 100%;
+    height: inherit 100%;
+    text-align: center;
+}
+
 .parallax-inner h1, h2{
     color: yellow;
 }
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
 
 /*bootstrap customizations*/
 
