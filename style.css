@@ -1,4 +1,10 @@
-
+/*custom html*/
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding 0px;
+}
 
 /*--parallax--*/
 
@@ -29,7 +35,21 @@
 }
 
 /*carousel*/
- 
+
+
+
+/*fix for white space created by form-group*/
+.form-group{
+    width: 100%;
+}
+
+
+/*footer*/
+#footer {
+    background: #999;
+    display: inline-block;
+    width: 100%;
+}
 
 /*bootstrap customizations*/
 
