@@ -45,16 +45,16 @@
                     <div class="carousel-inner">
                         <div class="item active">
                             <blockquote class="blockquote-reverse">
-                                <p>Ian and Joey, the owners, are very professional, accommodating, easy to deal with and the nicest too. Your guests will enjoy taking their pictures because Ian makes them feel comfortable and will cue them to do their best and wackiest faces. Try them and you will never regret it!</p>
+                                <p>{{quote1.message}}</p>
 
                                 <footer>Nona Marie Olpindo Mejia</footer>
                             </blockquote>
                         </div>
                         <div class="item">
                             <blockquote class="blockquote-reverse">
-                                <p>I recommend this photo booth to every occasion. Ian was so accommodating and very professional. All my guests were having fun and really enjoyed the unlimited shots. Thanks again and until next time.</p>
+                                <p>{{quote2.message}}</p>
 
-                                <footer>Neth Lazatin</footer>
+                                <footer>{{quote2.name}}</footer>
                             </blockquote>
                         </div>
                     </div>
@@ -71,9 +71,9 @@
         
         <div class="visible-xs">
             <blockquote class="blockquote-reverse">
-                <p>Ian and Joey, the owners, are very professional, accommodating, easy to deal with and the nicest too. Your guests will enjoy taking their pictures because Ian makes them feel comfortable and will cue them to do their best and wackiest faces. Try them and you will never regret it!</p>
+                <p>{{quote1.message}}</p>
 
-                <footer>Nona Marie Olpindo Mejia</footer>
+                <footer>{{quote1.name}}</footer>
             </blockquote>
 
             <blockquote class="blockquote-reverse">
@@ -91,6 +91,7 @@
 </div>
 
 <div ng-controller="formController">
+    <h1 class="form-heading text-center">Lets get in touch!</h2>
     <form name="form" class="form-horizontal" novalidate>
         <div class="form-group">
             <label for="inputName3" class="col-sm-2 control-label">Name</label>
