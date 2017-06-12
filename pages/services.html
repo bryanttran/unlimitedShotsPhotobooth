@@ -2,7 +2,31 @@
 </section>
 
 <div class="jumbotron text-center">
-	<h1>Services Page</h1>
+	<div class="container">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left">
+            <h2><strong>Photobooth Party Package</strong><br /></h2> 
+            <h3> $350 for two hours<br/ >$100/hr for additional time</h3>
+            <ul>
+                <li class="service-desc" ng-repeat="desc in photobooth"> {{desc}}</li>
+            </ul>
+            
+            <h2><strong>Small weddings and party photoshoot</strong><br /></h2> 
+            <h3> $200/hr<small> Prices may vary</small></h3>
+            <ul>
+                <li class="service-desc" ng-repeat="desc in wedding"> {{desc}}</li>
+            </ul>
+            
+            <h2><strong>Sound system with mic</strong></h2> 
+            <h3> $30/hr</h3>
+            <ul>
+                <li class="service-desc" ng-repeat="desc in sound"> {{desc}}</li>
+            </ul>
+        </div>
+        
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <h3>photos goes here</h3>
+        </div>
+    </div>
 </div>
 
     <script type="text/javascript" src="script.js"></script>

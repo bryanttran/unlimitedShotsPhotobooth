@@ -8,6 +8,3 @@ $('[data-parallax="scroll"]').each(function() {
     var $this = $(this);
     $this.parallax({imageSrc: $this.data('image-src') });
 });
-
-//$('.parallax-home-2').parallax(); may need later
-

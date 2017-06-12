@@ -63,7 +63,7 @@ USPApp.controller('mainController', function($scope) {
 });
 
 USPApp.controller('aboutController', function($scope) {
-    $scope.message = 'About';
+    
 });
 
 USPApp.controller('contactController', function($scope) {
@@ -72,4 +72,34 @@ USPApp.controller('contactController', function($scope) {
 
 USPApp.controller('servicesController', function($scope) {
     $scope.message = 'Services';
+    $scope.photobooth = [
+        "Unlimited Shots (Premium lens)",
+        "Unlimited Prints (Professional Quality 4x6)",
+        "Customized layouts/design templates",
+        "Free use of fun props",
+        "Choice of colored backdrop",
+        "CD of all images taken by the Photobooth",
+        "Full-time photobooth attendant",
+    ]
+    
+    $scope.wedding = [
+        "Unlimited Shots (Premium lens)",
+        "Unlimited Prints (Professional Quality 4x6)",
+        "Customized layouts/design templates",
+        "Free use of fun props",
+        "Choice of colored backdrop",
+        "CD of all images taken by the Photobooth",
+        "Full-time photobooth attendant",
+    ]
+    
+    $scope.sound = [
+        "Unlimited Shots (Premium lens)",
+        "Unlimited Prints (Professional Quality 4x6)",
+        "Customized layouts/design templates",
+        "Free use of fun props",
+        "Choice of colored backdrop",
+        "CD of all images taken by the Photobooth",
+        "Full-time photobooth attendant",
+    ]
+    
 });
