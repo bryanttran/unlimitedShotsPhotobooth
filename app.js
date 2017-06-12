@@ -44,6 +44,22 @@ USPApp.controller('mainController', function($scope) {
         message : "I recommend this photo booth to every occasion. Ian was so accommodating and very professional. All my guests were having fun and really enjoyed the unlimited shots. Thanks again and until next time.",
         name : "Neth Lazatin"
     };
+    
+    $scope.master = {};
+
+    $scope.update = function(user) {
+        $scope.master = angular.copy(user);
+    };
+
+    $scope.reset = function(form) {
+        if (form) {
+            form.$setPristine();
+            form.$setUntouched();
+        }
+        $scope.user = angular.copy($scope.master);
+    };
+
+    $scope.reset();
 });
 
 USPApp.controller('aboutController', function($scope) {
