@@ -59,6 +59,15 @@
     <div id="controller">
         <div ng-view></div>
         <div id="footer" ng-include="'footer.html'"></div>
+		<script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+		<script>function loaded() {
+  console.log('contact form submission handler loaded successfully');
+  // bind to the submit event of our form
+  var form = document.getElementById('gform');
+  form.addEventListener("submit", handleFormSubmit, false);
+};
+document.addEventListener('DOMContentLoaded', loaded, false);
+</script>
     </div>
 
     

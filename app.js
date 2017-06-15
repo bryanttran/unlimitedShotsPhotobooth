@@ -30,6 +30,12 @@ USPApp.config(function($routeProvider) {
         });
 });
 
+USPApp.directive('homePage',function () {
+	return {
+		templateUrl: 'pages/home.html'
+	};
+});
+
 
 
 // Controllers
@@ -46,7 +52,7 @@ USPApp.controller('mainController', function($scope) {
     };
     
     $scope.$on('$routeChangeSuccess', function(){
-       
+       loaded();
     });
     
     
