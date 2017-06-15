@@ -17,4 +17,5 @@ Bryant Tran www.github.com/bryanttran
 ## Acknowledgments
 
 * Pixelcog - Parallax scrolling effect JS file - https://github.com/pixelcog/parallax.js/
+* dwyl - HTML form email with Google Script without server -https://github.com/dwyl/html-form-send-email-via-google-script-without-server
 
