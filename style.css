@@ -30,7 +30,7 @@ body, html {
 }
 
 .parallax-window {
-    min-height: 400px;
+    min-height: 350px;
     background: transparent;
 }
 
@@ -55,6 +55,28 @@ body, html {
 }
 
 /*bootstrap customizations*/
+
+.navbar {
+	position: absolute;
+	z-index: 30;
+	width: 100%;
+}
+
+.ngview{
+	padding-top: 50px;
+}
+
+.jumbotron {
+	margin-bottom: 0;
+}
+
+.jumbotron-burgundy {
+	background-color: #800040;
+}
+
+.text-white {
+	color: white;
+}
 
 @media (max-width: 768px) {
     .col-xs-12 {
