@@ -24,18 +24,23 @@ USPApp.config(function($routeProvider) {
         })
 
         // Services page
-        .when('/services', {
+        .when('/photobooth', {
             templateUrl : 'pages/services.html',
-            controller  : 'servicesController'
+            controller  : 'photoboothController'
+        })
+	
+	// Services page
+        .when('/wedding', {
+            templateUrl : 'pages/services.html',
+            controller  : 'weddingController'
+        })
+	
+	// Services page
+        .when('/sound', {
+            templateUrl : 'pages/services.html',
+            controller  : 'soundController'
         });
 });
-
-USPApp.directive('homePage',function () {
-	return {
-		templateUrl: 'pages/home.html'
-	};
-});
-
 
 
 // Controllers
@@ -66,7 +71,7 @@ USPApp.controller('contactController', function($scope) {
     $scope.message = 'Contact';
 });
 
-USPApp.controller('servicesController', function($scope) {
+USPApp.controller('photoboothController', function($scope) {
     $scope.message = 'Services';
     $scope.photobooth = [
         "Unlimited Shots (Premium lens)",
@@ -78,6 +83,11 @@ USPApp.controller('servicesController', function($scope) {
         "Full-time photobooth attendant",
     ]
     
+});
+
+USPApp.controller('weddingController', function($scope) {
+    $scope.message = 'Services';
+
     $scope.wedding = [
         "Unlimited Shots (Premium lens)",
         "Unlimited Prints (Professional Quality 4x6)",
@@ -87,7 +97,12 @@ USPApp.controller('servicesController', function($scope) {
         "CD of all images taken by the Photobooth",
         "Full-time photobooth attendant",
     ]
-    
+
+});
+
+USPApp.controller('soundController', function($scope) {
+    $scope.message = 'Services';
+
     $scope.sound = [
         "Unlimited Shots (Premium lens)",
         "Unlimited Prints (Professional Quality 4x6)",
