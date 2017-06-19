@@ -16,35 +16,42 @@ USPApp.config(function($routeProvider) {
             templateUrl : 'pages/about.html',
             controller  : 'aboutController'
         })
-
+	
         // Contact page
         .when('/contact', {
             templateUrl : 'pages/contact.html',
             controller  : 'contactController'
         })
 
-        // Services page
+        // Photobooth page
         .when('/photobooth', {
             templateUrl : 'pages/services.html',
             controller  : 'photoboothController'
         })
 	
-	// Services page
+		// Wedding page
         .when('/wedding', {
-            templateUrl : 'pages/services.html',
+            templateUrl : 'pages/wedding.html',
             controller  : 'weddingController'
         })
 	
-	// Services page
+		// Sound page
         .when('/sound', {
-            templateUrl : 'pages/services.html',
+            templateUrl : 'pages/sound.html',
             controller  : 'soundController'
         });
 });
 
+//Form directive
+USPApp.directive('contactForm', function(){
+	return {
+		templateUrl: 'directives/contact-form.html'
+	};
+});
+
 
 // Controllers
-USPApp.controller('mainController', function($scope) {
+USPApp.controller('mainController', function($scope, $timeout) {
     
     $scope.quote1 = {
         message : "Ian and Joey, the owners, are very professional, accommodating, easy to deal with and the nicest too. Your guests will enjoy taking their pictures because Ian makes them feel comfortable and will cue them to do their best and wackiest faces. Try them and you will never regret it!",
@@ -55,10 +62,10 @@ USPApp.controller('mainController', function($scope) {
         message : "I recommend this photo booth to every occasion. Ian was so accommodating and very professional. All my guests were having fun and really enjoyed the unlimited shots. Thanks again and until next time.",
         name : "Neth Lazatin"
     };
-    
-    $scope.$on('$routeChangeSuccess', function(){
-       loaded();
-    });
+	
+	$timeout(function() {
+		loaded();
+	}, 3000);
     
     
 });
@@ -67,12 +74,16 @@ USPApp.controller('aboutController', function($scope) {
     
 });
 
-USPApp.controller('contactController', function($scope) {
+USPApp.controller('contactController', function($scope, $timeout) {
     $scope.message = 'Contact';
+	
+	$timeout(function() {
+		loaded();
+	}, 3000);
+
 });
 
 USPApp.controller('photoboothController', function($scope) {
-    $scope.message = 'Services';
     $scope.photobooth = [
         "Unlimited Shots (Premium lens)",
         "Unlimited Prints (Professional Quality 4x6)",
@@ -86,8 +97,6 @@ USPApp.controller('photoboothController', function($scope) {
 });
 
 USPApp.controller('weddingController', function($scope) {
-    $scope.message = 'Services';
-
     $scope.wedding = [
         "Unlimited Shots (Premium lens)",
         "Unlimited Prints (Professional Quality 4x6)",
@@ -101,8 +110,6 @@ USPApp.controller('weddingController', function($scope) {
 });
 
 USPApp.controller('soundController', function($scope) {
-    $scope.message = 'Services';
-
     $scope.sound = [
         "Unlimited Shots (Premium lens)",
         "Unlimited Prints (Professional Quality 4x6)",
