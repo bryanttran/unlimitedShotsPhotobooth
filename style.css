@@ -60,6 +60,15 @@ body, html {
 	position: absolute;
 	z-index: 30;
 	width: 100%;
+	background: #222;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #d1d1d1;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: white;
 }
 
 .ngview{
@@ -68,10 +77,11 @@ body, html {
 
 .jumbotron {
 	margin-bottom: 0;
+	background-color: #efecec;
 }
 
 .jumbotron-burgundy {
-	background-color: #800040;
+	//background-color: #800040;
 }
 
 .text-white {
