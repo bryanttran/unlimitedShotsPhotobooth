@@ -4,8 +4,12 @@ body, html {
     height: 100%;
     margin: 0px;
     padding 0px;
+	font-family: Raleway, sans-serif !important;
 }
 
+h1 {
+	font-weight: bolder;
+}
 /*--parallax--*/
 
 .parallax-home-1{
@@ -26,7 +30,7 @@ body, html {
 }
 
 .parallax-text {
-    color: yellow;
+    color: blue;
 }
 
 .parallax-window {
@@ -54,6 +58,20 @@ body, html {
     width: 100%;
 }
 
+.footer-img img{
+	transition: filter .7s;
+	-webkit-transition: filter .7s;
+	transition: transform .7s ease;
+	-webkit-transition: -webkit-transform .7s ease;
+}
+
+.footer-img img:hover {
+	filter: brightness(0) invert(1);
+	-webkit-filter: brightness(0) invert(1);
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+}
+
 /*bootstrap customizations*/
 
 .navbar {
@@ -66,6 +84,8 @@ body, html {
 .navbar-default .navbar-nav > li > a {
 	color: #d1d1d1;
 }
+
+.navbar-nav > li > .dropdown-toggle:focus { background-color: #222222}
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
 	color: white;
