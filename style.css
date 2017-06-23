@@ -72,6 +72,10 @@ h1 {
 	-webkit-transform: rotate(360deg);
 }
 
+.footer-img a {
+	padding: 10px;
+}
+
 /*bootstrap customizations*/
 
 .navbar {
@@ -87,9 +91,48 @@ h1 {
 
 .navbar-nav > li > .dropdown-toggle:focus { background-color: #222222}
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .dropwdown-menu > li:hover{
 	color: white;
 }
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+	border: none;
+}
+
+.navbar-toggle span.icon-bar{
+	transition: all 0.5s;
+}
+
+.navbar-toggle span:nth-of-type(2) {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform-origin: 10% 10%;
+}
+
+.navbar-toggle span:nth-of-type(3) {
+	opacity: 0;
+}
+
+.navbar-toggle span:nth-of-type(4) {
+	transform: rotate(-45deg);
+	transform-origin: 10% 90%;
+}
+
+.navbar-toggle.collapsed span:nth-child(2),
+.navbar-toggle.collapsed span:nth-child(4) {
+	transform: rotate(0);
+}
+
+.navbar-toggle.collapsed span:nth-child(3) {
+	opacity: 1;
+}
+
+/**/
 
 .ngview{
 	padding-top: 50px;
@@ -109,7 +152,7 @@ h1 {
 }
 
 @media (max-width: 768px) {
-    .col-xs-12 {
+    .jumbotron, .parallax-text, .center-header-xs {
         text-align: center;
     }
 }

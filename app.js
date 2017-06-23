@@ -75,7 +75,7 @@ USPApp.controller('aboutController', function($scope) {
 });
 
 USPApp.controller('contactController', function($scope, $timeout) {
-    $scope.message = 'Contact';
+    $scope.message = 'Have a question about our products? Any requests that are different? Questions about props? Contact us and we will gladly respond! We cater all around the SF bay area from San Fransisco to Gilroy! Please fill out the form so we can spice up your event!';
 	
 	$timeout(function() {
 		loaded();
