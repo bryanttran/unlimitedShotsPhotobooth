@@ -19,11 +19,17 @@ $('.parallax-home-1').parallax({imageSrc: 'pictures/background.jpeg'});*/
 
 
 $('#navbar a').on('click', function() {
-	$('.navbar-toggle').collapse('hide');
+	$('.navbar-toggle').click;
 });
 
-
 */
+
+$('#navbar a').click(function() {
+	var navbar_toggle = $('.navbar-toggle');
+	if (navbar_toggle.is(':visible')) {
+		navbar_toggle_trigger('click');
+	}
+})
 
 
 $('[data-parallax="scroll"]').each(function() {

@@ -7,6 +7,10 @@ body, html {
 	font-family: Raleway, sans-serif !important;
 }
 
+body {
+	//background: black;
+}
+
 h1 {
 	font-weight: bolder;
 }
@@ -83,18 +87,38 @@ h1 {
 	z-index: 30;
 	width: 100%;
 	background: #222;
+	border-radius: 0px;
+	border: 5px;
 }
 
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a, .dropdown-tab {
 	color: #d1d1d1;
 }
 
-.navbar-nav > li > .dropdown-toggle:focus { background-color: #222222}
-
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .dropwdown-menu > li:hover{
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
 	color: white;
 }
 
+
+#dropdown-container {
+	background-color: #d3d3d3;
+	color: black;
+}
+
+#dropdown-container > li > a{
+	color: black;
+}
+
+#dropdown-container > li > a{
+	color: black;
+}
+
+#dropdown-container > li > a:focus,
+#dropdown-container > li > a:focus{
+	color: #f1f1f1;
+}
+
+/*navbar hamburger animation*/
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
 	background-color: transparent;
@@ -130,6 +154,12 @@ h1 {
 
 .navbar-toggle.collapsed span:nth-child(3) {
 	opacity: 1;
+}
+
+/*Form CSS*/
+.control-label {
+	font-weight: bolder;
+	font-size: 18px;
 }
 
 /**/
