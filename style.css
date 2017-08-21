@@ -34,15 +34,20 @@ h1 {
 }
 
 .parallax-text {
-    color: blue;
+    color: #FFFFFF;
 }
 
 .parallax-window {
-    min-height: 350px;
+    /*min-height: 350px;*/
+	height: 65vh;
     background: transparent;
 }
 
 /*carousel*/
+.carousel-inner {
+	width: 100%;
+	min-height: 370px;
+}
 
 /*form*/
 .form-heading {
@@ -173,9 +178,6 @@ h1 {
 	background-color: #efecec;
 }
 
-.jumbotron-burgundy {
-	//background-color: #800040;
-}
 
 .text-white {
 	color: white;
