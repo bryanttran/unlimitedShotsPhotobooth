@@ -14,6 +14,14 @@ body {
 h1 {
 	font-weight: bolder;
 }
+
+.service-pictures {
+	height: 33vh;
+	border: 1px solid #000;
+	display: inline-block;
+	margin: 0 auto;
+}
+
 /*--parallax--*/
 
 .parallax-home-1{
@@ -23,7 +31,7 @@ h1 {
 }
 
 .parallax-inner{
-    padding: 5% 0;   
+    
 }
 
 #parallax-home-2{
@@ -40,6 +48,12 @@ h1 {
 .parallax-window {
     /*min-height: 350px;*/
 	height: 65vh;
+    background: transparent;
+}
+
+.parallax-window-1 {
+    /*min-height: 350px;*/
+	//height: 65vh;
     background: transparent;
 }
 
@@ -187,4 +201,11 @@ h1 {
     .jumbotron, .parallax-text, .center-header-xs {
         text-align: center;
     }
+}
+
+@media (max-width: 1223px) {
+	.service-pictures {
+		width: 100%;
+		height: auto;
+	}
 }

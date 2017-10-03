@@ -79,7 +79,7 @@ USPApp.controller('contactController', function($scope, $timeout) {
 	
 	$timeout(function() {
 		loaded();
-	}, 3000);
+	}, 1000);
 
 });
 
